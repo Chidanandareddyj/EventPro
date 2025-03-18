@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.circle-1,
+.circle-2,
+.circle-3 {
+  @apply absolute rounded-full opacity-30 animate-float;
+  background: linear-gradient(45deg, rgba(59, 130, 246, 0.5), rgba(147, 51, 234, 0.5));
+  filter: blur(24px);
+}
+
+.circle-1 {
+  width: 300px;
+  height: 300px;
+  top: -50px;
+  right: -50px;
+  animation-delay: 0s;
+}
+
+.circle-2 {
+  width: 400px;
+  height: 400px;
+  bottom: -100px;
+  left: -100px;
+  animation-delay: -2s;
+}
+
+.circle-3 {
+  width: 200px;
+  height: 200px;
+  bottom: 50%;
+  right: 30%;
+  animation-delay: -4s;
+} 
